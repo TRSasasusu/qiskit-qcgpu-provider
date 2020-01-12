@@ -12,11 +12,11 @@ setuptools.setup(
     version="0.2.0",
     author="Adam Kelly",
     author_email="adamkelly2201@gmail.com",
-    description="An OpenCL based quantum computer simulator",
+    description="An OpenCL or CUDA based quantum computer simulator",
     long_description=LONG_DESCRIPTION,
     url="https://qcgpu.github.io",
     packages=setuptools.find_packages(),
-    setup_requires=['qcgpu>=0.1.0', 'qiskit'],
+    setup_requires=['qiskit'],
     license="Apache 2.0",
     classifiers=[
         "Environment :: Console",
@@ -30,7 +30,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.6",
         "Topic :: Scientific/Engineering",
     ],
-    install_requires=['qcgpu>=0.1.0', 'qiskit'],
+    install_requires=['qiskit'],
     tests_require=['nose'],
     python_requires=">=3.5"
 )

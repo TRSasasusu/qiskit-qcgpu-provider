@@ -129,8 +129,6 @@ class QCGPUStatevectorSimulator(BaseBackend):
             QCGPUJob: derived from BaseJob
         """
 
-        qcgpu.backend._create_context()
-
         job_id = str(uuid.uuid4())
         job = QCGPUJob(self, job_id, self._run_job(job_id, qobj), qobj)
         return job
